@@ -14,7 +14,7 @@ export default function Login({setIsLogin}) {
     const registerSubmit = async e =>{
         e.preventDefault()
         try {
-            const res = await axios.post('https://notesappla.onrender.com/users/register',{
+            const res = await axios.post('https://noteloginbackend.onrender.com/users/register',{
                 username: user.name,
                 email: user.email,
                 password: user.password
@@ -29,7 +29,7 @@ export default function Login({setIsLogin}) {
     const loginSubmit = async e =>{
         e.preventDefault()
         try {
-            const res = await axios.post('https://notesappla.onrender.com/users/login',{
+            const res = await axios.post('https://noteloginbackend.onrender.com/users/login',{
                 email: user.email,
                 password: user.password
             })
